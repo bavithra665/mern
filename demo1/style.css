@@ -1,7 +1,8 @@
-/* 1. Universal Selector */
+/* 0. Box Border Model */
 * {
     margin: 5px;
     padding: 5px;
+    box-sizing: border-box; /* borderbox applied */
 }
 
 /* 2. Tag Selector */
