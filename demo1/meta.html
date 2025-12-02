@@ -23,8 +23,12 @@
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <!-- Open in new tab -->
+            <li><a href="#" target="_blank">Home (New Tab)</a></li>
+
+            <!-- Open in parent frame -->
+            <li><a href="https://example.com" target="_parent">About (Parent)</a></li>
+
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -39,6 +43,17 @@
             <h2>Important Notice</h2>
             <p>This page will refresh and redirect automatically after 10 seconds.</p>
         </article>
+
+        <!-- Fieldset + Legend -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label>Name:</label>
+            <input type="text"><br><br>
+
+            <label>Email:</label>
+            <input type="email"><br><br>
+        </fieldset>
     </main>
 
     <footer>
