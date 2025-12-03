@@ -82,10 +82,6 @@ h1::after {
     font-weight: bold;
 }
 
-/* -------------------------------------- */
-/* 🔥 Added DL, DT, DD CSS (NEW CODE)     */
-/* -------------------------------------- */
-
 .info-list {
     border: 1px solid red;
     padding: 10px;
