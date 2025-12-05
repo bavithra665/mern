@@ -1,4 +1,8 @@
-function div(a,b){
-    console.log(a/b);
+function user(name,city,age){
+    return[
+        {
+            age: age,
+        }
+    ];
 }
-div(10,5);
+console.log(user("Sid","Delhi",22));
