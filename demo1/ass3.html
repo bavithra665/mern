@@ -7,7 +7,7 @@
     <style>
       body {
         font-family: Arial;
-        background: #f5f5f5;
+        background: white;
         padding: 30px;
       }
 
@@ -56,21 +56,16 @@
     <div class="container">
       <h2>DOM Manipulation Practice UI</h2>
 
-      <!-- Text Change -->
       <p id="text">This is a sample text.</p>
       <button onclick="changeText()">Change Text</button>
 
-      <!-- Color Change -->
       <button onclick="changeColor()">Change Background Color of Box</button>
 
-      <!-- Box -->
       <div id="box">I am a Box</div>
 
-      <!-- Show/Hide -->
       <button onclick="hideBox()">Hide Box</button>
       <button onclick="showBox()">Show Box</button>
 
-      <!-- Add Item -->
       <div>
         <input type="text" id="itemInput" placeholder="Enter item..." />
         <button onclick="addItem()">Add Item</button>
@@ -83,19 +78,17 @@
     document.getElementById("text").innerText = "Text has been changed!";
   }
 
+  function hideBox() {
+    document.getElementById("box").style.display = "none";
+  }
+  
+  function showBox() {
+    document.getElementById("box").style.display = "flex";
+  }
   function changeColor() {
     document.getElementById("box").style.backgroundColor =
       "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
-
-  function hideBox() {
-    document.getElementById("box").style.display = "none";
-  }
-
-  function showBox() {
-    document.getElementById("box").style.display = "flex";
-  }
-
   function addItem() {
     let value = document.getElementById("itemInput").value;
 
